@@ -1,458 +1,537 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Take control of your crypto in Trezor Suite. Manage your assets in one app.">
-    <meta name="keywords" content="Trezor, crypto, cryptocurrency, wallet, security, blockchain">
-    <meta name="author" content="Trezor">
-    <title>Trezor Suite App (Official) | Desktop & Web⁕ Crypto Management</title>
-    <meta name="google-site-verification" content="m1jpQapR7s3uT2odkmqbxyrZHcANfJb4z__jS3SHsZc" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
-</head>
-<body class="bg-gray-50">
-
-    <!-- Top Notification Bar -->
-    <div class="bg-green-700 text-white text-center py-2">
-        Trezor Model One & Trezor Model T available at a new reduced price! <a href="#" class="underline">Shop Now</a>
-    </div>
-
-    <!-- Header -->
-    <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="mr-4">
-                    <i class="fas fa-lock text-2xl"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Take control of your crypto in Trezor Suite. Manage your assets in one app.">
+        <meta name="keywords" content="Trezor, crypto, cryptocurrency, wallet, security, blockchain">
+        <meta name="author" content="Trezor">
+        <title>Trezor Suite App (Official) | Desktop & Web⁕ Crypto Management</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-50">
+  
+        <!-- Top Notification Bar -->
+        <div class="bg-green-700 text-white text-center py-2">
+            Trezor Model One & Trezor Model T available at a new reduced price! <a href="#" class="underline">Shop Now</a>
+        </div>
+  
+        <!-- Header -->
+        <header class="bg-white shadow">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="mr-4">
+                        <i class="fas fa-lock text-2xl"></i>
+                    </div>
+                    <div class="text-xl font-bold">TREZOR</div>
                 </div>
-                <div class="text-xl font-bold">TREZOR</div>
+                <nav class="flex items-center space-x-6">
+                    <div class="relative group">
+                        <button class="text-gray-700">Products <i class="fas fa-chevron-down"></i></button>
+                        <!-- Dropdown menu -->
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded mt-2">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 2</a>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gray-700">App</a>
+                    <a href="#" class="text-gray-700">Coins</a>
+                    <div class="relative group">
+                        <button class="text-gray-700">Learn & Support <i class="fas fa-chevron-down"></i></button>
+                        <!-- Dropdown menu -->
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded mt-2">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Support 1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Support 2</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-globe text-gray-700"></i>
+                        <i class="fas fa-dollar-sign text-gray-700"></i>
+                        <i class="fas fa-shopping-cart text-gray-700"></i>
+                        <span class="text-gray-700">0</span>
+                    </div>
+                    <a href="#" class="bg-green-700 text-white px-4 py-2 rounded">Get your Trezor</a>
+                </nav>
             </div>
-            <nav class="flex items-center space-x-6">
-                <div class="relative group">
-                    <button class="text-gray-700">Products <i class="fas fa-chevron-down"></i></button>
-                    <!-- Dropdown menu -->
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded mt-2">
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 1</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 2</a>
+        </header>
+  
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl font-bold text-gray-900">Take control of your <span class="text-green-700">crypto</span> in Trezor Suite</h1>
+            <p class="text-gray-600 mt-4">Manage your assets in one app.</p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#" class="bg-green-700 text-white px-6 py-3 rounded">Download for desktop</a>
+                <a href="#" class="bg-gray-200 text-gray-700 px-6 py-3 rounded">Trezor Suite for web</a>
+            </div>
+            <div class="mt-8 text-gray-600">
+                <p>Version: v24.9.2 - Signature - Signing key 2020 - Signing key 2021</p>
+            </div>
+            <div class="max-w-7xl mx-auto p-6">
+       <h1 class="text-4xl font-bold mb-4">
+        Supported
+        <span class="bg-gray-50 text-gray-800 font-sans" "text-green-600">
+         Coins &amp; Tokens
+        </span>
+       </h1>
+       <p class="text-lg mb-6">
+        Curious about BTC, ETH, ERC-20 tokens, or Cardano and Solana tokens on Trezor? Check the supported assets.
+       </p>
+       <div class="flex items-center mb-6">
+        <div class="relative w-full">
+         <input class="w-full p-3 pl-10 border border-gray-300 rounded-lg" placeholder="Search supported coins &amp; tokens" type="text"/>
+         <i class="fas fa-search absolute left-3 top-3 text-gray-400">
+         </i>
+        </div>
+        <select class="ml-4 p-3 border border-gray-300 rounded-lg">
+         <option value="all">
+          Trezor model
+         </option>
+         <option value="safe">
+          Safe
+         </option>
+         <option value="safe3">
+          Safe 3
+         </option>
+         <option value="one">
+          One
+         </option>
+        </select>
+       </div>
+       <div class="flex items-center justify-between mb-4">
+        <div class="text-lg font-semibold">
+         Asset
+        </div>
+        <div class="text-lg font-semibold">
+         Trezor model
+        </div>
+        <div class="text-lg font-semibold">
+         Transfer
+        </div>
+        <div class="text-lg font-semibold">
+         Trade
+        </div>
+        <div class="text-lg font-semibold">
+         Wallet app
+        </div>
+       </div>
+       <div class="space-y-4">
+        <!-- Bitcoin -->
+        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+         <div class="flex items-center">
+          <img alt="Bitcoin logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/9RXOBpOfvi3DQijKxETMUEzbY5ebEtom8Cr2uivDgL1q1okTA.jpg" width="40"/>
+          <div>
+           <div class="font-semibold">
+            Bitcoin
+           </div>
+           <div class="text-gray-500">
+            BTC
+            <span class="text-sm">
+             (1 network)
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="flex space-x-2">
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe 3
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           One
+          </span>
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Send &amp; receive
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Buy, sell &amp; exchange
+         </div>
+         <div class="text-green-600">
+          Trezor Suite or third-party wallets
+         </div>
+        </div>
+        <!-- Ethereum -->
+        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+         <div class="flex items-center">
+          <img alt="Ethereum logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/G7ru5JNsXVJ3GRfVKbH5b7UJJZe3FVosMvclVpA8P8zu1okTA.jpg" width="40"/>
+          <div>
+           <div class="font-semibold">
+            Ethereum
+           </div>
+           <div class="text-gray-500">
+            ETH
+            <span class="text-sm">
+             (1 network)
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="flex space-x-2">
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe 3
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           One
+          </span>
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Send &amp; receive
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Buy, sell &amp; exchange
+         </div>
+         <div class="text-green-600">
+          Trezor Suite or third-party wallets
+         </div>
+        </div>
+        <!-- Tether -->
+        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+         <div class="flex items-center">
+          <img alt="Tether logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/S04C2IEaG0YWHFFgOfNOOTrVKoFNbu4kYhbIiYixxii0aUyJA.jpg" width="40"/>
+          <div>
+           <div class="font-semibold">
+            Tether
+           </div>
+           <div class="text-gray-500">
+            USDT
+            <span class="text-sm">
+             (5 networks)
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="flex space-x-2">
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe 3
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           One
+          </span>
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Send &amp; receive
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Buy, sell &amp; exchange
+         </div>
+         <div class="text-green-600">
+          Trezor Suite or third-party wallets
+         </div>
+        </div>
+        <!-- BNB -->
+        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+         <div class="flex items-center">
+          <img alt="BNB logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/fPU3ugsfjqpOepixGUMPAz9ayXAhSf7lOzIPOJ2izk82WjSOB.jpg" width="40"/>
+          <div>
+           <div class="font-semibold">
+            BNB
+           </div>
+           <div class="text-gray-500">
+            BNB
+            <span class="text-sm">
+             (2 networks)
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="flex space-x-2">
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe 3
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           One
+          </span>
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Send &amp; receive
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Buy, sell &amp; exchange
+         </div>
+         <div class="text-green-600">
+          Third-party wallets
+         </div>
+        </div>
+        <!-- USD Coin -->
+        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+         <div class="flex items-center">
+          <img alt="USD Coin logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/QGMHHTiZdg4SPhYvAv7RZLCbFbzeHtpRtiEay9HpaFE4aUyJA.jpg" width="40"/>
+          <div>
+           <div class="font-semibold">
+            USD Coin
+           </div>
+           <div class="text-gray-500">
+            USDC
+            <span class="text-sm">
+             (4 networks)
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="flex space-x-2">
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe 3
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           One
+          </span>
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Send &amp; receive
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Buy, sell &amp; exchange
+         </div>
+         <div class="text-green-600">
+          Trezor Suite or third-party wallets
+         </div>
+        </div>
+        <!-- XRP -->
+        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+         <div class="flex items-center">
+          <img alt="XRP logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/rJ7olLpbO0IbGlLeKMMBB8R2jXl8VKr0uoNAmbIS3Hfm1okTA.jpg" width="40"/>
+          <div>
+           <div class="font-semibold">
+            XRP
+           </div>
+           <div class="text-gray-500">
+            XRP
+            <span class="text-sm">
+             (1 network)
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="flex space-x-2">
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe 3
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           One
+          </span>
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Send &amp; receive
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Buy, sell &amp; exchange
+         </div>
+         <div class="text-green-600">
+          Trezor Suite or third-party wallets
+         </div>
+        </div>
+        <!-- Cardano -->
+        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+         <div class="flex items-center">
+          <img alt="Cardano logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/TlQeILgMveicfIa83WM4pbwaUP7mNAD5WPo8RjdVwMUOrRJnA.jpg" width="40"/>
+          <div>
+           <div class="font-semibold">
+            Cardano
+           </div>
+           <div class="text-gray-500">
+            ADA
+            <span class="text-sm">
+             (1 network)
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="flex space-x-2">
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe 3
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           One
+          </span>
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Send &amp; receive
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Buy, sell &amp; exchange
+         </div>
+         <div class="text-green-600">
+          Trezor Suite
+         </div>
+        </div>
+        <!-- Dogecoin -->
+        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+         <div class="flex items-center">
+          <img alt="Dogecoin logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/czbHsC8Pl671AV4YfHPBuLHqKYXPHxjPeCC1W3hu2OJs1okTA.jpg" width="40"/>
+          <div>
+           <div class="font-semibold">
+            Dogecoin
+           </div>
+           <div class="text-gray-500">
+            DOGE
+            <span class="text-sm">
+             (1 network)
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="flex space-x-2">
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           Safe 3
+          </span>
+          <span class="px-3 py-1 bg-gray-200 rounded-full">
+           One
+          </span>
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Send &amp; receive
+         </div>
+         <div class="text-green-600">
+          <i class="fas fa-check-circle">
+          </i>
+          Buy, sell &amp; exchange
+         </div>
+         <div class="text-green-600">
+          Trezor Suite
+         </div>
+        </div>
+       </div>
+      </div>
+                  <section class="bg-white shadow-lg p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-green-800 mb-4">Trezor Suite App (Version v24.5.3)</h2>
+                <p class="text-gray-700 mb-6">The Trezor Suite App (v24.5.3) provides the ultimate solution for cryptocurrency management. With cutting-edge security features, a user-friendly interface, and robust tools for managing digital assets, this version offers an enhanced experience for both beginners and advanced users.</p>
+  
+                <h3 class="text-lg font-semibold text-green-700 mb-3">What’s New in v24.5.3</h3>
+                <p class="text-gray-700 mb-6">In version 24.5.3, the Trezor Suite App introduces a host of new features designed to streamline your cryptocurrency management. Updates include improved hardware compatibility, faster transaction processing, and a revamped dashboard for an even more intuitive user experience.</p>
+  
+                <h3 class="text-lg font-semibold text-green-700 mb-3">User-Friendly Interface</h3>
+                <p class="text-gray-700 mb-6">With an emphasis on simplicity, the Trezor Suite App’s interface ensures that both new and experienced users can easily manage their cryptocurrency assets. From setting up your Trezor device to making secure transactions, everything is just a few clicks away.</p>
+  
+                <h3 class="text-lg font-semibold text-green-700 mb-3">Enhanced Security</h3>
+                <p class="text-gray-700 mb-6">Security is a top priority for Trezor. The Suite App includes multi-layered encryption protocols, two-factor authentication (2FA), and advanced passphrase protection. With these features, you can rest assured that your digital assets are safe from unauthorized access.</p>
+  
+                <h3 class="text-lg font-semibold text-green-700 mb-3">Seamless Device Integration</h3>
+                <p class="text-gray-700 mb-6">Trezor Suite App integrates seamlessly with Trezor hardware wallets, making it easy to access and manage your funds. The app supports a wide range of cryptocurrencies and provides real-time insights into your portfolio, giving you full control over your digital assets.</p>
+  
+                <h3 class="text-lg font-semibold text-green-700 mb-3">Get Started with Trezor Suite App</h3>
+                <p class="text-gray-700 mb-6">Whether you are new to cryptocurrency or a seasoned investor, the Trezor Suite App offers the tools you need to manage your assets securely and efficiently. Download version 24.5.3 today and experience the next level of cryptocurrency security and convenience.</p>
+            </section>
+        </main>
+          <footer class="bg-black text-white" "py-10">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-lock text-2xl"></i>
+                            <span class="ml-2 text-2xl font-bold">TREZOR</span>
+                        </div>
+                        <p class="text-gray-400">a part of <span class="font-semibold">SatoshiLabs Group</span></p>
+                        <div class="flex space-x-4 mt-4">
+                            <i class="fab fa-xing text-xl"></i>
+                            <i class="fab fa-reddit text-xl"></i>
+                            <i class="fab fa-instagram text-xl"></i>
+                            <i class="fab fa-facebook text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Products</h3>
+                        <ul>
+                            <li class="mb-1 text-gray-400">Trezor Safe 3</li>
+                            <li class="mb-1 text-gray-400">Trezor Safe 5</li>
+                            <li class="mb-1 text-gray-400">Model One</li>
+                            <li class="mb-1 text-gray-400">Trezor Keep</li>
+                            <li class="mb-1 text-gray-400">Trezor Expert</li>
+                            <li class="mb-1 text-gray-400">Compare wallets</li>
+                            <li class="mb-1 text-gray-400">Trezor Suite</li>
+                            <li class="mb-1 text-gray-400">All products & accessories</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Learn</h3>
+                        <ul>
+                            <li class="mb-1 text-gray-400">Supported Coins</li>
+                            <li class="mb-1 text-gray-400">Blog</li>
+                            <li class="mb-1 text-gray-400">Privacy and Security</li>
+                            <li class="mb-1 text-gray-400">About Company</li>
+                            <li class="mb-1 text-gray-400">Support</li>
+                            <li class="mb-1 text-gray-400">Knowledge Base</li>
+                            <li class="mb-1 text-gray-400">Forum</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Other</h3>
+                        <ul>
+                            <li class="mb-1 text-gray-400">FAQs</li>
+                            <li class="mb-1 text-gray-400">Terms of Use</li>
+                            <li class="mb-1 text-gray-400">Affiliate Program</li>
+                            <li class="mb-1 text-gray-400">Reseller Program</li>
+                            <li class="mb-1 text-gray-400">Resellers</li>
+                            <li class="mb-1 text-gray-400">GitHub</li>
+                            <li class="mb-1 text-gray-400">Press & Media</li>
+                            <li class="mb-1 text-gray-400">Careers</li>
+                        </ul>
                     </div>
                 </div>
-                <a href="#" class="text-gray-700">App</a>
-                <a href="#" class="text-gray-700">Coins</a>
-                <div class="relative group">
-                    <button class="text-gray-700">Learn & Support <i class="fas fa-chevron-down"></i></button>
-                    <!-- Dropdown menu -->
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded mt-2">
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Support 1</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Support 2</a>
-                    </div>
+                <div class="mt-10 border-t border-gray-700 pt-4 flex justify-between items-center">
+                    <p class="text-gray-400">Copyright belongs to Trezor company s.r.o. All rights reserved.</p>
+                    <span class="text-gray-400">Cookies</span>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <i class="fas fa-globe text-gray-700"></i>
-                    <i class="fas fa-dollar-sign text-gray-700"></i>
-                    <i class="fas fa-shopping-cart text-gray-700"></i>
-                    <span class="text-gray-700">0</span>
-                </div>
-                <a href="#" class="bg-green-700 text-white px-4 py-2 rounded">Get your Trezor</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-4xl font-bold text-gray-900">Take control of your <span class="text-green-700">crypto</span> in Trezor Suite</h1>
-        <p class="text-gray-600 mt-4">Manage your assets in one app.</p>
-        <div class="mt-8 flex justify-center space-x-4">
-            <a href="#" class="bg-green-700 text-white px-6 py-3 rounded">Download for desktop</a>
-            <a href="#" class="bg-gray-200 text-gray-700 px-6 py-3 rounded">Trezor Suite for web</a>
-        </div>
-        <div class="mt-8 text-gray-600">
-            <p>Version: v24.9.2 - Signature - Signing key 2020 - Signing key 2021</p>
-        </div>
-        <div class="max-w-7xl mx-auto p-6">
-   <h1 class="text-4xl font-bold mb-4">
-    Supported
-    <span class="bg-gray-50 text-gray-800 font-sans" "text-green-600">
-     Coins &amp; Tokens
-    </span>
-   </h1>
-   <p class="text-lg mb-6">
-    Curious about BTC, ETH, ERC-20 tokens, or Cardano and Solana tokens on Trezor? Check the supported assets.
-   </p>
-   <div class="flex items-center mb-6">
-    <div class="relative w-full">
-     <input class="w-full p-3 pl-10 border border-gray-300 rounded-lg" placeholder="Search supported coins &amp; tokens" type="text"/>
-     <i class="fas fa-search absolute left-3 top-3 text-gray-400">
-     </i>
-    </div>
-    <select class="ml-4 p-3 border border-gray-300 rounded-lg">
-     <option value="all">
-      Trezor model
-     </option>
-     <option value="safe">
-      Safe
-     </option>
-     <option value="safe3">
-      Safe 3
-     </option>
-     <option value="one">
-      One
-     </option>
-    </select>
-   </div>
-   <div class="flex items-center justify-between mb-4">
-    <div class="text-lg font-semibold">
-     Asset
-    </div>
-    <div class="text-lg font-semibold">
-     Trezor model
-    </div>
-    <div class="text-lg font-semibold">
-     Transfer
-    </div>
-    <div class="text-lg font-semibold">
-     Trade
-    </div>
-    <div class="text-lg font-semibold">
-     Wallet app
-    </div>
-   </div>
-   <div class="space-y-4">
-    <!-- Bitcoin -->
-    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-     <div class="flex items-center">
-      <img alt="Bitcoin logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/9RXOBpOfvi3DQijKxETMUEzbY5ebEtom8Cr2uivDgL1q1okTA.jpg" width="40"/>
-      <div>
-       <div class="font-semibold">
-        Bitcoin
-       </div>
-       <div class="text-gray-500">
-        BTC
-        <span class="text-sm">
-         (1 network)
-        </span>
-       </div>
-      </div>
-     </div>
-     <div class="flex space-x-2">
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe 3
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       One
-      </span>
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Send &amp; receive
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Buy, sell &amp; exchange
-     </div>
-     <div class="text-green-600">
-      Trezor Suite or third-party wallets
-     </div>
-    </div>
-    <!-- Ethereum -->
-    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-     <div class="flex items-center">
-      <img alt="Ethereum logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/G7ru5JNsXVJ3GRfVKbH5b7UJJZe3FVosMvclVpA8P8zu1okTA.jpg" width="40"/>
-      <div>
-       <div class="font-semibold">
-        Ethereum
-       </div>
-       <div class="text-gray-500">
-        ETH
-        <span class="text-sm">
-         (1 network)
-        </span>
-       </div>
-      </div>
-     </div>
-     <div class="flex space-x-2">
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe 3
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       One
-      </span>
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Send &amp; receive
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Buy, sell &amp; exchange
-     </div>
-     <div class="text-green-600">
-      Trezor Suite or third-party wallets
-     </div>
-    </div>
-    <!-- Tether -->
-    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-     <div class="flex items-center">
-      <img alt="Tether logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/S04C2IEaG0YWHFFgOfNOOTrVKoFNbu4kYhbIiYixxii0aUyJA.jpg" width="40"/>
-      <div>
-       <div class="font-semibold">
-        Tether
-       </div>
-       <div class="text-gray-500">
-        USDT
-        <span class="text-sm">
-         (5 networks)
-        </span>
-       </div>
-      </div>
-     </div>
-     <div class="flex space-x-2">
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe 3
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       One
-      </span>
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Send &amp; receive
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Buy, sell &amp; exchange
-     </div>
-     <div class="text-green-600">
-      Trezor Suite or third-party wallets
-     </div>
-    </div>
-    <!-- BNB -->
-    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-     <div class="flex items-center">
-      <img alt="BNB logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/fPU3ugsfjqpOepixGUMPAz9ayXAhSf7lOzIPOJ2izk82WjSOB.jpg" width="40"/>
-      <div>
-       <div class="font-semibold">
-        BNB
-       </div>
-       <div class="text-gray-500">
-        BNB
-        <span class="text-sm">
-         (2 networks)
-        </span>
-       </div>
-      </div>
-     </div>
-     <div class="flex space-x-2">
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe 3
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       One
-      </span>
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Send &amp; receive
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Buy, sell &amp; exchange
-     </div>
-     <div class="text-green-600">
-      Third-party wallets
-     </div>
-    </div>
-    <!-- USD Coin -->
-    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-     <div class="flex items-center">
-      <img alt="USD Coin logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/QGMHHTiZdg4SPhYvAv7RZLCbFbzeHtpRtiEay9HpaFE4aUyJA.jpg" width="40"/>
-      <div>
-       <div class="font-semibold">
-        USD Coin
-       </div>
-       <div class="text-gray-500">
-        USDC
-        <span class="text-sm">
-         (4 networks)
-        </span>
-       </div>
-      </div>
-     </div>
-     <div class="flex space-x-2">
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe 3
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       One
-      </span>
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Send &amp; receive
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Buy, sell &amp; exchange
-     </div>
-     <div class="text-green-600">
-      Trezor Suite or third-party wallets
-     </div>
-    </div>
-    <!-- XRP -->
-    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-     <div class="flex items-center">
-      <img alt="XRP logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/rJ7olLpbO0IbGlLeKMMBB8R2jXl8VKr0uoNAmbIS3Hfm1okTA.jpg" width="40"/>
-      <div>
-       <div class="font-semibold">
-        XRP
-       </div>
-       <div class="text-gray-500">
-        XRP
-        <span class="text-sm">
-         (1 network)
-        </span>
-       </div>
-      </div>
-     </div>
-     <div class="flex space-x-2">
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe 3
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       One
-      </span>
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Send &amp; receive
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Buy, sell &amp; exchange
-     </div>
-     <div class="text-green-600">
-      Trezor Suite or third-party wallets
-     </div>
-    </div>
-    <!-- Cardano -->
-    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-     <div class="flex items-center">
-      <img alt="Cardano logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/TlQeILgMveicfIa83WM4pbwaUP7mNAD5WPo8RjdVwMUOrRJnA.jpg" width="40"/>
-      <div>
-       <div class="font-semibold">
-        Cardano
-       </div>
-       <div class="text-gray-500">
-        ADA
-        <span class="text-sm">
-         (1 network)
-        </span>
-       </div>
-      </div>
-     </div>
-     <div class="flex space-x-2">
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe 3
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       One
-      </span>
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Send &amp; receive
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Buy, sell &amp; exchange
-     </div>
-     <div class="text-green-600">
-      Trezor Suite
-     </div>
-    </div>
-    <!-- Dogecoin -->
-    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-     <div class="flex items-center">
-      <img alt="Dogecoin logo" class="w-10 h-10 mr-4" height="40" src="https://storage.googleapis.com/a1aa/image/czbHsC8Pl671AV4YfHPBuLHqKYXPHxjPeCC1W3hu2OJs1okTA.jpg" width="40"/>
-      <div>
-       <div class="font-semibold">
-        Dogecoin
-       </div>
-       <div class="text-gray-500">
-        DOGE
-        <span class="text-sm">
-         (1 network)
-        </span>
-       </div>
-      </div>
-     </div>
-     <div class="flex space-x-2">
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       Safe 3
-      </span>
-      <span class="px-3 py-1 bg-gray-200 rounded-full">
-       One
-      </span>
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Send &amp; receive
-     </div>
-     <div class="text-green-600">
-      <i class="fas fa-check-circle">
-      </i>
-      Buy, sell &amp; exchange
-     </div>
-     <div class="text-green-600">
-      Trezor Suite
-     </div>
-    </div>
-   </div>
-  </div>
-    </main>
-
-</body>
-</html>
+            </div>
+        </footer>
+    </body>
+  
+    </html>
